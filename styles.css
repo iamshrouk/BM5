@@ -1,0 +1,196 @@
+/* إعدادات أساسية */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* تنسيق الشريط العلوي */
+header {
+    background-color: white;
+    border-bottom: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+.navbar h1 {
+    margin: 0;
+    border: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+nav ul li a.active {
+    color: #b63e3e;
+}
+
+nav ul li a:hover {
+    color: rgba(201, 18, 18, 0.678);
+}
+
+.login-register {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-register.login {
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+}
+
+.login-register.register {
+    background-color: hsla(0, 84%, 32%, 0.897);
+    color: white;
+}
+
+.pink-background-container {
+    display: flex; 
+    align-items: flex-start; /* محاذاة العناصر إلى بداية المحور العرضي (أعلى الحاوية) */
+    background-color: hsla(348, 25%, 92%, 0.801); /* لون خلفية الحاوية */
+    width: 100%; /* العرض الكامل للحاوية */
+    height: 700px; /* ارتفاع الحاوية (يمكن تعديله حسب الحاجة) */
+    padding: 20px; /* الحشو حول المحتوى */
+    box-sizing: border-box; /* تضمين الحشو في حسابات العرض/الارتفاع */
+    margin-top: 20px; /* المسافة فوق هذه الحاوية */
+}
+
+.pink-background-container .circle-image {
+    width: 50%; /* عرض الصورة */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    margin-right: 20px; /* المسافة بين الصورة والنص */
+}
+
+.additional-info-content {
+    color: rgb(212, 14, 14); /* لون النص */
+    font-size: 18px; /* حجم الخط */
+    max-width: 50%; /* تحديد أقصى عرض لتفادي التمرير الأفقي */
+    text-align: left; /* محاذاة النص إلى اليسار */
+    margin-top: 20px; /* المسافة من الأعلى لوضع النص */
+    position: relative; /* وضع النسبي لتمكين التحديد المطلق للعناصر البينية */
+}
+
+.additional-info-content p.additional-info {
+    color: black; /* لون النص */
+    font-size: 40px; /* حجم الخط */
+    font-weight: bold; /* جعل النص عريض */
+    margin-top: 20px;/* المسافة بين الفقرات */
+}
+
+.additional-info-content p.additional2-info {
+    color: black; /* لون النص */
+    font-size: 20px; /* حجم الخط */
+    font-weight: normal; /* وزن الخط عادي */
+    margin-top: 20px; /* المسافة بين الفقرات */
+    position: relative; /* وضع النسبي لتمكين التحديد المطلق للعناصر البينية */
+}
+
+.additional-info-content p.additional3-info {
+    color: black; /* لون النص */
+    font-size: 20px; /* حجم الخط */
+    font-weight: bold; /* وزن الخط عادي */
+    margin-top: 20px; /* المسافة بين الفقرات */
+    position: relative; /* وضع النسبي لتمكين التحديد المطلق للعناصر البينية */
+    padding-left: 30px; /* المساحة لإفساح المجال للدائرة */
+}
+
+.additional-info-content p.additional3-info::before {
+    content: '→'; /* السهم المستخدم */
+    font-size: 10px; /* حجم السهم */
+    color: hsla(0, 84%, 32%, 0.897); /* لون السهم */
+    position: absolute; /* تحديد مطلق */
+    left: 0; /* وضع السهم على اليسار */
+    top: 50%; /* توسيط السهم عموديًا */
+    transform: translateY(-50%); /* تعديل المحاذاة الرأسية */
+    width: 20px; /* عرض الدائرة */
+    height: 20px; /* ارتفاع الدائرة */
+    border-radius: 50%; /* جعل الخلفية دائرية */
+    border: 2px solid hsla(0, 84%, 32%, 0.897); /* لون وإطار الدائرة */
+    display: flex; /* استخدام Flexbox لتوسيع السهم عموديًا وأفقيًا */
+    align-items: center; /* توسيط السهم عموديًا داخل الدائرة */
+    justify-content: center; /* توسيط السهم أفقيًا داخل الدائرة */
+}
+
+.red-background-container {
+    background-color: hsla(0, 84%, 32%, 0.897); /* لون الخلفية */
+    color: white; /* لون النص */
+    text-align: center; /* محاذاة النص إلى الوسط */
+    padding: 40px; /* الحشو حول النص */
+    margin-top: 0px; /* المسافة فوق الحاوية */
+    width: 100%; /* العرض الكامل للحاوية */
+    height: 300px; /* تحديد الارتفاع */
+}
+
+.red-background-text {
+    color: white; /* لون النص الأبيض */
+    font-size: 24px; /* حجم الخط */
+    font-weight: bold; /* جعل النص عريض */
+    margin: 50; /* إزالة المسافة الافتراضية */
+}
+
+p {
+    margin-top: 10px; /* المسافة بين العنوان والنص */
+    font-weight: normal;
+}
+
+
+
+
+.contact-info-container {
+    border-bottom: 1px solid #ccc; /* تغيير اللون والسمك هنا */
+    margin-bottom: 20px; /* إضافة بعض المسافة أسفل الخط */
+}
+
+.contact-info {
+    color: white;
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.spacer {
+    height: 30px; /* تحديد المسافة التي ترغب فيها */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
